@@ -8,16 +8,17 @@ package com.javarush.test.level03.lesson08.task01;
 Последовательность вводимых данных имеет большое значение.
 */
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
-    {
-        //Напишите тут ваш код
+        public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            String name = reader.readLine();
+            String time = reader.readLine();
+
+        System.out.println(name + " захватит мир через " + time + " лет. Му-ха-ха!");
+    }
+
 
     }
-}

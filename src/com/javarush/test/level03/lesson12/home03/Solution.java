@@ -11,6 +11,7 @@ public class Solution
 {
     public static void main(String[] args)   throws Exception
     {
-        //Напишите тут ваш код
+        int money = 50;
+        System.out.println("Я буду зарабатывать " + money + "$" + " в час");
     }
 }

@@ -5,11 +5,10 @@ package com.javarush.test.level04.lesson02.task04;
 */
 
 public class Cat {
-    private String fullName;
+    private  String fullName;
 
-    public void setName(String firstName, String lastName) {
-        String fullName = firstName + " " + lastName;
-
-        //add your code here
+    public  void setName(String firstName, String lastName) {
+        fullName = firstName + " " + lastName;
     }
+
 }

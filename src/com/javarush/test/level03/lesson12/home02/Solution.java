@@ -8,6 +8,8 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        //Напишите тут ваш код
+        for (int i = 0; i<10; i++){
+            System.out.println("Я не хочу изучать Java, я хочу большую зарплату");
+        }
     }
 }
