@@ -12,19 +12,12 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
-        int c = Integer.parseInt(reader.readLine());
-        int d = Integer.parseInt(reader.readLine());
+        int firstNumber = Integer.parseInt(reader.readLine());
+        int secondNumber = Integer.parseInt(reader.readLine());
+        int thirdNumber = Integer.parseInt(reader.readLine());
+        int fourthNumber = Integer.parseInt(reader.readLine());
 
-        System.out.println("Наибольшее число : " + maxNumber(a, b , c ,d));
-    }
-
-    private static int maxNumber(int a, int b, int c, int d)
-    {
-        int  e =  maxNumber(a,b);
-        int f = maxNumber(c,d);
-        return maxNumber(e,f);
+        System.out.println(maxNumber(maxNumber(firstNumber,secondNumber),maxNumber(thirdNumber,fourthNumber)));
     }
 
     private static int maxNumber(int a, int b)
