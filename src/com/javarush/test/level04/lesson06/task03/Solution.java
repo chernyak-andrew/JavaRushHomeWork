@@ -13,15 +13,43 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int[] array = new int[3];
-        for (int i = 0; i < array.length; i++){
-        array[i] = Integer.parseInt(reader.readLine());
+        int max;
+        int mid;
+
+        int firstNumber = Integer.parseInt(reader.readLine());
+        int secondNumber = Integer.parseInt(reader.readLine());
+        int thirdNumber = Integer.parseInt(reader.readLine());
+
+        max = firstNumber;
+
+        if (secondNumber > max){
+            max = secondNumber;
+            mid = firstNumber;
+        } else
+        mid = secondNumber;
+
+        if (thirdNumber > max){
+            System.out.println(thirdNumber);
+            System.out.println(max);
+            System.out.println(mid);
+        }
+        else{
+            System.out.println(max);
+            sort(thirdNumber, mid);
         }
 
-        System.out.println(array[0]);
-        System.out.println(array[1]);
-        System.out.println(array[2]);
+    }
 
-
+    private static void sort(int a, int b)
+    {
+        if (a > b)
+        {
+            System.out.println(a);
+            System.out.println(b);
+        } else
+        {
+            System.out.println(b);
+            System.out.println(a);
+        }
     }
 }
