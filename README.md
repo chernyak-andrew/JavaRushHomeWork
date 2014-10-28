@@ -3,10 +3,11 @@ JavaRushHomeWork
 
 Exercises solutions of courses JavaRush
 
-Level03
+<h3>Level03</h3>
 
-     lesson08
-        task01 - Ввести с клавиатуры число и имя, вывести на экран строку: «имя» захватит мир через «число» лет. Му-ха-ха!
+     <h4>lesson08</h>
+      <p><a href="https://github.com/chernyak-andrew/JavaRushHomeWork/blob/master/src/com/javarush/test/level03/lesson08/task01/Solution.java" title="">task01</a></p>
+         - Ввести с клавиатуры число и имя, вывести на экран строку: «имя» захватит мир через «число» лет. Му-ха-ха!
       lesson12
         home02 - Вывести на экран десять раз надпись «Я не хочу изучать Java, я хочу большую зарплату»
         home03 - Ввести с клавиатуры число n. Вывести на экран надпись «Я буду зарабатывать $n в час».
