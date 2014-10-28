@@ -13,8 +13,6 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int mid;
-
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
         int c = Integer.parseInt(reader.readLine());
