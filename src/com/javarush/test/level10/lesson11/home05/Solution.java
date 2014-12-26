@@ -41,15 +41,15 @@ public class Solution
         ArrayList<Character> letters = new ArrayList<Character>();
         for (int i = 0; i < list.size(); i++)
         {
-
             for (int j = 0; j < list.get(i).length(); j++)
             {
                 letters.add(list.get(i).charAt(j));
             }
         }
 
-        Map<Character, Integer> resultMap = new LinkedHashMap <Character, Integer>();
-        for (int i = 0; i < alphabet.size(); i++){
+        Map<Character, Integer> resultMap = new LinkedHashMap<Character, Integer>();
+        for (int i = 0; i < alphabet.size(); i++)
+        {
             resultMap.put(alphabet.get(i), 0);
         }
 
@@ -57,19 +57,13 @@ public class Solution
         {
             Character letter = letters.get(i);
 
-            if (alphabet.contains(letter))
+            if (resultMap.containsKey(letter))
             {
-                if (resultMap.containsKey(letter))
-                {
-                    int count = resultMap.get(letter) +1;
-                    resultMap.put(letter, count);
-                } else
-                {
-                    resultMap.put(letter, 1);
-                }
+                int count = resultMap.get(letter) + 1;
+                resultMap.put(letter, count);
             } else
             {
-                throw new Exception("There symbol not from russian alphabet : " + letter);
+                throw new Exception("There symbol not from russian alphabet : " + "'" + letter + "'");
             }
         }
 
